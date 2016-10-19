@@ -4,8 +4,8 @@ const PhotoGrid = React.createClass({
   render(){
     return(
       <div className="photo-grid">
-        {this.props.posts.map((posts, i) => <Photo {...this.props}
-        key={i} i={i} posts={posts}/>)}
+        {this.props.posts.map((post, i) => <Photo {...this.props}
+        key={i} i={i} post={post}/>)}
       </div>
     );
   }
