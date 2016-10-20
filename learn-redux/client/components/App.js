@@ -4,6 +4,7 @@ import * as actionCreators from '../actions/actionCreators';
 
 import Main from './Main';
 
+//可以通过 this.state.props.来获取的到兑现
 function mapStateToProps(state){
   return{
     posts:state.posts,
@@ -11,6 +12,7 @@ function mapStateToProps(state){
   }
 }
 
+//可以通过 this.state.props. 来获取的到方法
 function mapDispachToProps(dispatch){
   return bindActionCreators(actionCreators,dispatch);
 }
